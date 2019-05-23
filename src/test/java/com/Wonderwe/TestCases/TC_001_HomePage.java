@@ -18,31 +18,34 @@ public class TC_001_HomePage extends BaseClass {
 		Thread.sleep(1000);
 		String act=driver.getTitle();
 		
-		
-		if(act.equals("WonderWe: Free1 Online Fundraising - Raise Money for a Cause"))
-		{
-			Assert.assertTrue(true);
-			System.out.println("Title Matched");
-		}
-		else
-		{
-			try {
-				
+		try {
+			page.Popup();
+			
+			
+			if(act.equals("WonderWe: Free1 Online Fundraising - Raise Money for a Cause"))
+			{
+				Assert.assertTrue(true);
+				System.out.println("Title Matched");
+			}
+			
+			else
+			{
 				timestamp=new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
 				capturescreen(driver,timestamp);
+				System.out.println("Title MissMatched");
+				Assert.fail();
+						
+
+			}	
+			
+		}	
+			catch (Exception e) {
 				
-			} catch (Exception e) {
 				errorMsg=e.getMessage();
 				
+				
+				
 			}
-			Assert.assertTrue(false);
-			System.out.println("Title not matched");
 			
-
-		}
-		page.Popup();
-		//log.info("Browser Maximized");
-		
-	}
-
+	}	
 }

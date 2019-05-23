@@ -2,27 +2,25 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="FundRising" duration-ms="2066" started-at="2019-05-22T16:24:04Z" finished-at="2019-05-22T16:24:06Z">
+  <suite name="FundRising" duration-ms="2257" started-at="2019-05-23T16:17:31Z" finished-at="2019-05-23T16:17:34Z">
     <groups>
     </groups>
-    <test name="FundRisingapplication test" duration-ms="2066" started-at="2019-05-22T16:24:04Z" finished-at="2019-05-22T16:24:06Z">
+    <test name="FundRisingapplication test" duration-ms="2257" started-at="2019-05-23T16:17:31Z" finished-at="2019-05-23T16:17:34Z">
       <class name="com.Wonderwe.TestCases.TC_001_HomePage">
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.Wonderwe.TestCases.TC_001_HomePage@42dafa95]" name="SetUp" is-config="true" duration-ms="19589" started-at="2019-05-22T21:53:45Z" finished-at="2019-05-22T21:54:04Z">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.Wonderwe.TestCases.TC_001_HomePage@42dafa95]" name="SetUp" is-config="true" duration-ms="46404" started-at="2019-05-23T21:46:45Z" finished-at="2019-05-23T21:47:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="FAIL" signature="Title()[pri:0, instance:com.Wonderwe.TestCases.TC_001_HomePage@42dafa95]" name="Title" duration-ms="1621" started-at="2019-05-22T21:54:05Z" finished-at="2019-05-22T21:54:06Z">
+        <test-method status="FAIL" signature="Title()[pri:0, instance:com.Wonderwe.TestCases.TC_001_HomePage@42dafa95]" name="Title" duration-ms="1780" started-at="2019-05-23T21:47:32Z" finished-at="2019-05-23T21:47:34Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertTrue(Assert.java:41)
-	at org.testng.Assert.assertTrue(Assert.java:51)
-	at com.Wonderwe.TestCases.TC_001_HomePage.Title(TC_001_HomePage.java:38)
+	at org.testng.Assert.fail(Assert.java:100)
+	at com.Wonderwe.TestCases.TC_001_HomePage.Title(TC_001_HomePage.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
