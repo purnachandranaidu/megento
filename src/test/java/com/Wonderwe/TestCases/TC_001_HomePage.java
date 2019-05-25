@@ -11,18 +11,17 @@ import com.Wonderwe.PageObjects.HomePage;
 
 public class TC_001_HomePage extends BaseClass {
 	
-	@Test
-	public void Title() throws InterruptedException, IOException
+	@Test(priority=1)
+	public void Title() throws IOException 
 	{
-		HomePage page=new HomePage(driver);
-		Thread.sleep(1000);
-		String act=driver.getTitle();
 		
 		try {
+			HomePage page=new HomePage(driver);
+			String act=driver.getTitle();
+			Thread.sleep(1000);
 			page.Popup();
 			
-			
-			if(act.equals("WonderWe: Free1 Online Fundraising - Raise Money for a Cause"))
+			if(act.equals("WonderWe: Free Online Fundraising - Raise Money for a Cause"))
 			{
 				Assert.assertTrue(true);
 				System.out.println("Title Matched");
@@ -30,22 +29,22 @@ public class TC_001_HomePage extends BaseClass {
 			
 			else
 			{
-				timestamp=new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
-				capturescreen(driver,timestamp);
-				System.out.println("Title MissMatched");
-				Assert.fail();
-						
+				throw new Exception("Title Mismatched");
+				
 
 			}	
 			
-		}	
-			catch (Exception e) {
-				
-				errorMsg=e.getMessage();
-				
-				
-				
-			}
 			
+		} catch (Exception e) {
+			
+			errorMsg=e.getMessage();
+			timestamp=new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+			capturescreen(driver,timestamp);
+			System.out.println(e.getMessage());
+			//Assert.assertTrue(false);
+			Assert.fail(e.getMessage());
+		}
+		
+		
 	}	
 }

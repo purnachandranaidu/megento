@@ -8,17 +8,7 @@
         <parameter name="browser" value="chrome"> </parameter>
         <classes>
       	<class name="com.Wonderwe.TestCases.TC_001_HomePage"></class>
-        <!-- <class name="com.Guru99ecommerce.testcases.TC_ReadPrice_002"></class>
-        <class name="com.Guru99ecommerce.testcases.TC_Addtocart_errormessageverification_003"></class>
-        <class name="com.Guru99ecommerce.testcases.TC_Verifyerrormessage_qantity_004"></class>
-        <class name="com.Guru99ecommerce.testcases.TC_CompareProducts_005"></class>
-        <class name="com.Guru99ecommerce.testcases.TC_Regitration_0006"></class>
-       <class name="com.Guru99ecommerce.testcases.TC_Login_007"></class>
-        <class name="com.Guru99ecommerce.testcases.TC_TvMenu_008"></class>
-        <class name="com.Guru99ecommerce.testcases.TC_WishList_009"></class>
-        <class name="com.Guru99ecommerce.testcases.TC_ShippingInfo_010"></class>
-        <class name="com.Guru99ecommerce.testcases.TC_BillingInfoAddress_011"></class> -->
-           
+      	<class name="com.Wonderwe.TestCases.TC_002_AnimalsFunds"></class>
         </classes>
     </test>
 </suite>
