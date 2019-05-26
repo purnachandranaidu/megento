@@ -7,20 +7,13 @@
   <test name="FundRisingapplication test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.Wonderwe.TestCases.TC_001_HomePage">
-        <methods>
-          <include name="Title"/>
-          <include name="SetUp"/>
-          <include name="Close"/>
-        </methods>
-      </class> <!-- com.Wonderwe.TestCases.TC_001_HomePage -->
-      <class name="com.Wonderwe.TestCases.TC_002_AnimalsFunds">
+      <class name="com.Wonderwe.TestCases.TC_002_AnimalsPage">
         <methods>
           <include name="SetUp"/>
-          <include name="Animal_Nature"/>
+          <include name="Animalsss"/>
           <include name="Close"/>
         </methods>
-      </class> <!-- com.Wonderwe.TestCases.TC_002_AnimalsFunds -->
+      </class> <!-- com.Wonderwe.TestCases.TC_002_AnimalsPage -->
     </classes>
   </test> <!-- FundRisingapplication test(failed) -->
 </suite> <!-- Failed suite [FundRising] -->

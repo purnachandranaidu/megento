@@ -3,7 +3,9 @@ package com.Wonderwe.TestCases;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,11 +17,15 @@ public class TC_001_HomePage extends BaseClass {
 	public void Title() throws IOException 
 	{
 		
+		
 		try {
-			HomePage page=new HomePage(driver);
+			
+			HomePage page=new HomePage();
 			String act=driver.getTitle();
-			Thread.sleep(1000);
+			//String act1=driver.findElement(By.xpath("//div[@class='bigtext']/h1")).getText();
+			Thread.sleep(10000);
 			page.Popup();
+			//page.Animal();
 			
 			if(act.equals("WonderWe: Free Online Fundraising - Raise Money for a Cause"))
 			{
@@ -32,9 +38,8 @@ public class TC_001_HomePage extends BaseClass {
 				throw new Exception("Title Mismatched");
 				
 
-			}	
-			
-			
+			}
+
 		} catch (Exception e) {
 			
 			errorMsg=e.getMessage();
@@ -44,7 +49,10 @@ public class TC_001_HomePage extends BaseClass {
 			//Assert.assertTrue(false);
 			Assert.fail(e.getMessage());
 		}
-		
-		
-	}	
+
+	}
+	
+	
 }
+
+

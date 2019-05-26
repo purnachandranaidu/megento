@@ -1,29 +1,27 @@
 package com.Wonderwe.TestCases;
 
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.Wonderwe.PageObjects.AnimalNature;
+import com.Wonderwe.PageObjects.Animals;
 
-public class TC_002_AnimalsFunds extends BaseClass {
-	public WebDriver driver;
-	
+public class TC_002_AnimalsPage extends BaseClass {
 	
 	@Test(priority=2)
-	public void Animal_Nature() throws IOException
+	public void Animalsss() throws Exception
 	{
 		try {
 			
-			AnimalNature animals=new AnimalNature(driver);
-			animals.Popup1();
+			Animals animals=new Animals();
+			Thread.sleep(10000);
+			animals.Animal_page();
+			
 			String Act=driver.findElement(By.xpath("//div[@class='bigtext']/h1")).getText();
-			if(Act=="Animals and Nature")
+			if(Act.equals("Animalsss and Nature"))
 			{
 				Assert.assertTrue(true);
 				System.out.println("Page Navigated Successfully");
@@ -31,7 +29,7 @@ public class TC_002_AnimalsFunds extends BaseClass {
 			
 			else
 			{
-				throw new Exception("Page Not Navigated Properly");
+				throw new Exception("Page Navigation Error");
 			}
 			
 		} catch (Exception e) {
@@ -41,7 +39,6 @@ public class TC_002_AnimalsFunds extends BaseClass {
 			System.out.println(e.getMessage());
 			//Assert.assertTrue(false);
 			Assert.fail(e.getMessage());
-			
 			
 		}
 	}

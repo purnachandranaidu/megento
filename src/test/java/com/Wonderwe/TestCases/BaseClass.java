@@ -25,7 +25,7 @@ public class BaseClass {
 	
 	ReadConfig readconfig=new ReadConfig();
 	public String url=readconfig.getApplicationurl();
-	public WebDriver driver;
+	public static WebDriver driver;
 	public static String timestamp;
 	public static String testMethodName;
 	public static String errorMsg;

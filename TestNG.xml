@@ -8,7 +8,7 @@
         <parameter name="browser" value="chrome"> </parameter>
         <classes>
       	<class name="com.Wonderwe.TestCases.TC_001_HomePage"></class>
-      	<class name="com.Wonderwe.TestCases.TC_002_AnimalsFunds"></class>
+      	<class name="com.Wonderwe.TestCases.TC_002_AnimalsPage"></class>
         </classes>
     </test>
 </suite>
