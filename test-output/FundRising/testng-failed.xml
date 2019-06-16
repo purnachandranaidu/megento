@@ -10,7 +10,7 @@
       <class name="com.Wonderwe.TestCases.TC_002_AnimalsPage">
         <methods>
           <include name="SetUp"/>
-          <include name="Animalsss"/>
+          <include name="CountrySelect"/>
           <include name="Close"/>
         </methods>
       </class> <!-- com.Wonderwe.TestCases.TC_002_AnimalsPage -->
