@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automationpractise" >
+    <listeners>
+        <listener class-name="com.Magento.utilities.Reporting"></listener>   	
+    </listeners>
+    <test name="MagentoApplication test">
+        <parameter name="browser" value="chrome"> </parameter>
+        <classes>
+      	<class name="com.Magento.testcases.TC_001_DashBoard"></class>
+      	<class name="com.Magento.testcases.TC_002_SytemCache"></class>
+      	<class name="com.Magento.testcases.TC_003_Customer_Verify"></class>    	
+        </classes>
+    </test>
+</suite>

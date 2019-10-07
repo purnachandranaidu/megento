@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="4" total="7" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Automationpractise" duration-ms="15340" started-at="2019-10-07T11:38:20Z" finished-at="2019-10-07T11:38:35Z">
+    <groups>
+    </groups>
+    <test name="MagentoApplication test" duration-ms="15340" started-at="2019-10-07T11:38:20Z" finished-at="2019-10-07T11:38:35Z">
+      <class name="com.Magento.testcases.TC_001_DashBoard">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Magento.testcases.TC_001_DashBoard@402a079c]" name="setUp" is-config="true" duration-ms="17195" started-at="2019-10-07T17:08:03Z" finished-at="2019-10-07T17:08:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Dashboardtabs()[pri:1, instance:com.Magento.testcases.TC_001_DashBoard@402a079c]" name="Dashboardtabs" duration-ms="2288" started-at="2019-10-07T17:08:20Z" finished-at="2019-10-07T17:08:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dashboardtabs -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Magento.testcases.TC_001_DashBoard@402a079c]" name="tearDown" is-config="true" duration-ms="1340" started-at="2019-10-07T17:08:36Z" finished-at="2019-10-07T17:08:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Magento.testcases.TC_001_DashBoard -->
+      <class name="com.Magento.testcases.TC_003_Customer_Verify">
+        <test-method status="PASS" signature="customer_verify()[pri:3, instance:com.Magento.testcases.TC_003_Customer_Verify@4cf777e8]" name="customer_verify" duration-ms="96" started-at="2019-10-07T17:08:35Z" finished-at="2019-10-07T17:08:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_verify -->
+      </class> <!-- com.Magento.testcases.TC_003_Customer_Verify -->
+      <class name="com.Magento.testcases.TC_002_SytemCache">
+        <test-method status="FAIL" signature="cache_clear()[pri:2, instance:com.Magento.testcases.TC_002_SytemCache@59ec2012]" name="cache_clear" duration-ms="12726" started-at="2019-10-07T17:08:23Z" finished-at="2019-10-07T17:08:35Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='The Magento cache4 storage has been flushed.']"}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MININT-1TH8HFR', ip: '10.171.72.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}), userDataDir=C:\Users\v-puchal\AppData\Local\Temp\scoped_dir35936_1576534246}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:54987}, acceptInsecureCerts=false, browserVersion=77.0.3865.90, browserName=chrome, javascriptEnabled=true, platformName=windows nt, setWindowRect=true}]
+Session ID: fb8a19056b21f403450c0dc0eae1c6c7
+*** Element info: {Using=xpath, value=//div[text()='The Magento cache4 storage has been flushed.']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='The Magento cache4 storage has been flushed.']"}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MININT-1TH8HFR', ip: '10.171.72.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}), userDataDir=C:\Users\v-puchal\AppData\Local\Temp\scoped_dir35936_1576534246}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:54987}, acceptInsecureCerts=false, browserVersion=77.0.3865.90, browserName=chrome, javascriptEnabled=true, platformName=windows nt, setWindowRect=true}]
+Session ID: fb8a19056b21f403450c0dc0eae1c6c7
+*** Element info: {Using=xpath, value=//div[text()='The Magento cache4 storage has been flushed.']}
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.Magento.testcases.TC_002_SytemCache.cache_clear(TC_002_SytemCache.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cache_clear -->
+      </class> <!-- com.Magento.testcases.TC_002_SytemCache -->
+    </test> <!-- MagentoApplication test -->
+  </suite> <!-- Automationpractise -->
+</testng-results>

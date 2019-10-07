@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Automationpractise]">
+  <listeners>
+    <listener class-name="com.Magento.utilities.Reporting"/>
+  </listeners>
+  <test name="MagentoApplication test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.Magento.testcases.TC_002_SytemCache">
+        <methods>
+          <include name="tearDown"/>
+          <include name="cache_clear"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Magento.testcases.TC_002_SytemCache -->
+    </classes>
+  </test> <!-- MagentoApplication test(failed) -->
+</suite> <!-- Failed suite [Automationpractise] -->
